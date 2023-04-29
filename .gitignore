@@ -1,0 +1,5 @@
+#node modules to be ignored
+node_modules
+#npm-debug.log
+.env
+
