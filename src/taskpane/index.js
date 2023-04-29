@@ -3,20 +3,21 @@ import { AppContainer } from "react-hot-loader";
 import { initializeIcons } from "@fluentui/font-icons-mdl2";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+/* import { BrowserRouter as Router } from "react-router-dom"; */
 /* global document, Office, module, require */
 
 initializeIcons();
 
 let isOfficeInitialized = false;
 
-const title = "Contoso Task Pane Add-in";
+const title = "Form Input";
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
       <Component title={title} isOfficeInitialized={isOfficeInitialized} />
     </AppContainer>,
-    document.getElementById("container")
+    document.getElementById("root")
   );
 };
 
